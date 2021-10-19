@@ -1,13 +1,17 @@
 package hu.muhari.webshop.domain;
 
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Data
+//@Data Bug...
+@Getter
+@Setter
 @NoArgsConstructor
 @Table(name = "product_category")
 public class ProductCategory {
